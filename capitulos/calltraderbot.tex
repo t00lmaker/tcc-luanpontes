@@ -1,17 +1,25 @@
 % ----------------------------------------------------------
-% Ajuda.Ai
+% Calltraderbot
 % ----------------------------------------------------------
-\chapter{Ajuda.Ai} \label{cha:ajudaai}
+\chapter{CallTraderBot} \label{cha:ctb}
 
-O projeto Ajuda.Ai é um software de código-fonte aberto que visa ajudar instituições a arrecadar doações através da internet e aos usuários a doarem para instituições de forma simples, semelhante a adquirir um produto numa loja online, ter uma boa integração junto a plataformas de redes sociais e unir doadores e instituições. O projeto apresentado foi construído com uma interface para ser acessada pelo navegador através de uma aplicação web de página única (\emph{Single Page Application}\footnote{Técnica onde uma única página base é carregada do servidor no acesso e após o carregamento apenas fragmentos da página serão carregados e/ou alterados do servidor.}), além de contar com uma API que dá suporte a outros tipos de interface, e no lado do servidor uma aplicação Java em um servidor de aplicação RedHat WildFly 10.
+Neste capítulo, apresentamos a ferramenta Calltraderbot, objeto deste trabalho. É um sistema de arquitetura simples que faz integração com a API do Telegram, APIs de Exchanges e foi desenvolvido utilizando a linguagem de programação Python na versão 3.5.
 
-O código-fonte da ferramenta está disponível sob licença MIT no endereço \\ https://github.com/g0dkar/ajuda-ai e está publicada no endereço https://ajuda.ai. A API pode ser acessada através do \emph{endpoint}\footnote{Ponto de Acesso: Endereço base para quaisquer chamadas a uma API REST} https://api.ajuda.ai/v1. Apesar da ferramenta estar pronta para uso, por hora nenhuma instituição real está sendo contemplada, mas duas instituições reais encontram-se cadastradas apenas para testes. Elas serão as primeiras a serem contactadas para iniciarem o uso do Ajuda.Ai. A divulgação da ferramenta será feita inicialmente através de contato direto com as Instituições e através de redes sociais. Futuramente, publicidade digital pode ser uma opção viável para ajudar a trazer mais doadores e novas instituições ao Ajuda.Ai.
+\section{Definição do produto} \label{sec:ctb:definicao}
 
+O projeto Calltraderbot é um bot que tem como objetivo automatizar  operações de compra e venda de criptomoedas com base em instruções dadas por usuários autorizados nas contas de usuários clientes de exchanges integradas no referido bot. O mesmo monitora livro de ordens, preço, volume de transações de paridades com ordens criadas e se encarrega de disparar ordens com base 
 
+Dividido em dois grupos de usuários: Administradores e clientes. Os administradores possuem permissão para criação de instruções, que chamo de \textbf{call}, aonde informa em quais exchanges criar a ordem, o preço de entrada, o preço do alvo e uma porcentagem de perca, para um risco calculado. Os administradores também podem forçar a venda de uma call, ativar e desativar usuários clientes que acompanham seus sinais ou calls, visualizar e exportar relatórios, alterar valores de configurações, bem como todos os comandos disponíveis aos usuários clientes.
 
+Usuários clientes podem cadastrar chaves de acesso que permite ao bot efetuar operações de compra e venda nas exchanges, realizar um gerenciamento de risco definindo valores como percentual máximo de seu saldo a ser utilizado pelo bot e quantidade de compra por ordem, visualizar saldo, histórico de ordens, ativar e desativar negociações, bem como é notificado automaticamente pelo bot em cada alteração de status de cada ordem.
 
+Devido ao grande volume de transações, ordens e usuários, se viu a necessidade da criação de um gestor online para visualização dos relatórios já disponibilizados pelo bot, listando calls, ordens, usuários, suas configurações e ordens recebidas, bem como todos os dados referentes a estes elementos.
 
-\section{Casos de Uso} \label{sec:ajudaai:casos}
+\section{Requisitos}
+\subsection{Requisitos Funcionais}
+\subsection{Requisitos Não Funcionais}
+
+\section{Casos de Uso} \label{sec:ctb:casos}
 
 O levantamento de requisitos foi feito através da análise do mercado de \emph{crowdfunding} nacional, do crescimento e popularização da prática dessa modalidade de investimento, tendencias internacionais em relação ao mercado de empreendimentos sociais e leitura e análise da literatura exposta no Capítulo \ref{cha:fundamentacao}. Os casos de uso relevantes oriundos do levantamento de requisitos foram:
 
