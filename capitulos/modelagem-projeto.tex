@@ -1,0 +1,76 @@
+% ----------------------------------------------------------
+% Modelagem do Projeto
+% ----------------------------------------------------------
+\chapter{Modelagem do Projeto} \label{cha:modelagem}
+
+\section{Definição do produto} \label{sec:ctb:definicao}
+
+% O projeto Calltraderbot é um bot que tem como objetivo automatizar  operações de compra e venda de criptomoedas com base em instruções dadas por usuários autorizados, nas contas de usuários clientes de exchanges integradas no referido bot. O mesmo monitora livro de ordens, preço, volume de transações de paridades com ordens criadas e se encarrega de disparar ordens com base 
+
+% Dividido em dois grupos de usuários: Administradores e clientes. Os administradores possuem permissão para criação de instruções, que chamo de \textbf{call}, aonde informa em quais exchanges criar a ordem, o preço de entrada, o preço do alvo e uma porcentagem de perca, para um risco calculado. Os administradores também podem forçar a venda de uma call, ativar e desativar usuários clientes que acompanham seus sinais ou calls, visualizar e exportar relatórios, alterar valores de configurações, bem como todos os comandos disponíveis aos usuários clientes.
+
+% Usuários clientes podem cadastrar chaves de acesso que permite ao bot efetuar operações de compra e venda nas exchanges, realizar um gerenciamento de risco definindo valores como percentual máximo de seu saldo a ser utilizado pelo bot e quantidade de compra por ordem, visualizar saldo, histórico de ordens, ativar e desativar negociações, bem como é notificado automaticamente pelo bot em cada alteração de status de cada ordem.
+
+% Devido ao grande volume de transações, ordens e usuários, se viu a necessidade da criação de um gestor online para visualização dos relatórios já disponibilizados pelo bot, listando calls, ordens, usuários, suas configurações e ordens recebidas, bem como todos os dados referentes a estes elementos.
+
+% \section{Levantamento de Requisitos}
+% \subsection{Requisitos Funcionais}
+% Os usuários administradores precisam listar e editar as configurações do canal e seus sinais em andamento, habilitar e desabilitar seus clientes (os usuários seguidores), visualizar indicadores do canal e receber notificações automáticas quando os alvos dos sinais forem atingidos e/ou novos usuários se cadastrarem. Para isso chatbot necessita ter os seguintes requisitos funcionais demonstrados na tabela a seguir:
+
+% \begin{table}[htbp]
+% 	\scriptsize
+% 	\centering
+% 	\begin{tabular}{|l|l|l|}
+% 		\hline \textbf{Código} & \textbf{Requisito} & \textbf{Descrição} \\ 
+% 		\hline ARF1 & Manutenção de configurações & Listagem e edição de configurações do canal \\
+% 		\hline ARF2 & Manutenção de sinais & Criação, listagem e edição de sinais de compra e venda \\
+% 		\hline ARF3 & Manutenção de seguidores & Listagem, ativação e desativação de usuários seguidores \\
+% 		\hline ARF4 & Notificações automáticas & Receber notificações automáticas quando houver ações de compra ou venda \\
+% 		\hline 
+% 	\end{tabular}
+% 	\caption{Requisitos funcionais do usuário administrador}
+% 	\label{tab:requisitos_funcionais_admin}
+% \end{table}
+
+% E os usuários clientes precisam listar e editar as configurações de sua conta que inclui gerenciamento de risco, chaves de acesso as corretoras; Listar as operações de compra e venda em andamento; Visualizar o resumo de sua conta; Ativar e desativar o bot; Além de receber notificações automáticas quando os alvos dos sinais forem atingidos, entre outros alertas necessários. Para isso, o chatbot necessita ter os seguintes requisitos funcionais demonstrados na tabela a seguir:
+
+% \begin{table}[htbp]
+% 	\scriptsize
+% 	\centering
+% 	\begin{tabular}{|l|l|l|}
+% 		\hline \textbf{Código} & \textbf{Requisito} & \textbf{Descrição} \\ 
+% 		\hline CRF1 & Manutenção da conta & Listagem e edição dos parâmetros de configuração de conta \\
+% 		\hline CRF2 & Listagem de operações & Listagem de operações de compra e venda em andamento \\
+% 		\hline CRF3 & Visualizar resumo & Listar resumo da conta, informando saldo \\
+% 		\hline CRF4 & Ligar/Desligar bot & Habilitar ou desabilitar o bot de realizar operações em sua conta \\
+% 		\hline CRF5 & Notificações automáticas & Receber notificações automáticas quando houver ações de compra ou venda \\
+% 		\hline 
+% 	\end{tabular}
+% 	\caption{Requisitos funcionais do usuário administrador}
+% 	\label{tab:requisitos_funcionais_admin}
+% \end{table}
+
+\subsection{Requisitos Não Funcionais}
+
+% Sobre os requisitos relacionados ao ambiente onde a aplicação está inserida, como: Um servidor mais robusto, medidas de segurança ou um usuário especializado para realização de determinadas ações. Não devem ser ignorados por não fazerem parte diretamente da aplicação, mas devem ser considerados por compor o seu ambiente e, por vezes, determinante para a sua utilização. Como os relacionados na tabela a seguir:
+
+% \begin{table}[htbp]
+% 	\scriptsize
+% 	\centering
+% 	\begin{tabular}{|l|l|l|}
+% 		\hline \textbf{Código} & \textbf{Requisito} & \textbf{Descrição} \\ 
+% 		\hline RNF1 & O sistema deve ser simples e intuitivo, provendo rapidez e facilidade nas interações & Usabilidade \\
+% 		\hline RNF2 & A Aplicação deve garantir a identificação do usuário & Segurança \\
+% 		\hline RNF3 & A Aplicação deve realizar as operações de compra e venda em menos de 5 segundos & Desempenho \\
+% 		\hline RNF4 & A Aplicação deve ser compatível com Python 3.6 & Compatibilidade \\
+% 		\hline 
+% 	\end{tabular}
+% 	\caption{Requisitos não-funcionais}
+% 	\label{tab:requisitos_funcionais_admin}
+% \end{table}
+
+\section{Diagramas de casos de uso} \label{sec:modelagem:casos}
+\section{Diagramas de classe} \label{sec:modelagem:classe}
+\section{Arquitetura do Sistema} \label{sec:modelagem:arquitetura}
+\section{Diagrama de Entidades-Relacionamentos} \label{sec:modelagem:der}
+\section{Interface} \label{sec:modelagem:interface}
