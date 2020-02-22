@@ -104,3 +104,96 @@ Na figura \ref{fig:uml_der} podemos ver a estrutura lógica usada como base para
 \end{figure}
 
 \section{Interface} \label{sec:modelagem:interface}
+
+\subsection{Tela de Autenticação}
+Logo que a aplicação é iniciada é verificado se o usuário já possui sessão ativa, caso não é exibido a tela de autenticação, onde o usuário pode:
+
+\begin{lista}
+  \item Acessar utilizando suas credenciais da conta Google;
+  \item Acessar como anônimo;
+\end{lista}
+
+Em qualquer um dos fluxos escolhidos é criado um registro de usuário, caso não o tenha.
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela de Autenticação}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/login.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
+
+\subsection{Tela Principal}
+A primeira tela que um usuário autenticado tem acesso é a tela \textit{home} ou tela principal. Nela são exibidos os seguintes elementos:
+
+\begin{lista}
+  \item Um avatar do usuário que leva ao perfil do mesmo;
+  \item Saldo atual;
+  \item Porcentagem de lucro das últimas 24 horas;
+  \item Uma seção que informa a categorial atual da conta;
+  \item Um \textit{card} com missões que além de desafiar e guiar o usuário, dão recompensas;
+  \item Um \textit{card} para compartilhamento do aplicativo nas redes sociais;
+  \item Um \textit{card} para compra do plano sem propagandas;
+  \item Um \textit{card} para um módulo de ajuda ao usuário;
+  \item \textit{Cards} de acesso aos torneios disponíveis;
+\end{lista}
+
+Nessa mesma tela, também podemos ver um menu em \textit{tabs} na parte inferior do aplicativo que auxilia na navegação entre as telas: principal, histórico de \textit{trades} e ranking. E na parte superior que da acesso a tela de perfil do usuário.
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela Principal}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/main.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
+
+\subsection{Tela de Perfil}
+Na tela de perfil o usuário tem a possibilidade de restaurar seus dados aos valores iniciais, bem como sair da aplicação e tem acesso alguns indicadores, sendo eles:
+
+\begin{lista}
+  \item Portfólio: Valor total;
+  \item Dinheiro disponível: Valor total disponível para operação de compra e venda;
+  \item Performance: Porcentagem comparativa do saldo atual com o saldo inicial;
+  \item \textit{Trades}: Total de negociações realizadas;
+  \item Ranking Global: Posição referente a performance realizada e comparada com todos os usuários da plataforma;
+  \item \textit{Profitable}: Razão de acertos e total de operações;
+\end{lista}
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela Principal}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/profile.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
+
+\subsection{Tela de Histórico}
+Na tela de histórico o usuário visualiza todas as negociações já realizadas.
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela de Histórico}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/history.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
+
+\subsection{Tela de Ranking}
+A tela de ranking dos usuários é ordenada pelo valor total do portfólio, seguido da porcentagem de lucro da conta, nome, país de origem e avatar.
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela de Ranking}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/ranking.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
+
+\subsection{Tela de Negociações}
+Nessa tela, o usuário pode fazer praticamente as mesmas coisas da tela principal, podendo clicar no nome do usuário que publicou a receita e ir para o seu perfil. Com um clique, o usuário também pode curtir, comentar e até mesmo favoritar as receitas. A parte mais importante dessa tela são as informações sobre a receita, onde o usuário pode ver, por exemplo, o tempo de preparo e cozimento, o rendimento e a dificuldade, além de ter todas as informações de ingredientes necessários e modo de preparo para fazer a receita.
+
+Na tela de negociações o usuário acompanha a flutuação do preço dos ativos, cria ordens de compra ou venda, a depender do horário de negociações do mesmo. Na barra superior é exibido saldo, sendo atualizado de acordo com as negociações em andamento. Ainda na barra superior, o usuário pode editar quais ativos de sua preferência devem ser exibidos na listagem horizontal que fica no topo da tela.
+No gráfico temos informações referente ao valor do ativo, a valorização do mesmo em relação ao fechamento do dia, o preço médio entre compra e venda, bem como a opção de alterar o tempo do gráfico e dois modos de visualização: em linha ou em barras.
+
+\begin{figure}[H]
+  \caption{\label{fig:mock_login}Tela de Negociações}
+  \centering
+  \includegraphics[scale=0.4]{imagens/mocks/tradezone.png}
+  \legend{Fonte: Elaborado pelo Autor}
+\end{figure}
