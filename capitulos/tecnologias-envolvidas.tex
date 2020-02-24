@@ -3,4 +3,30 @@
 % ----------------------------------------------------------
 \chapter{Tecnologias Envolvidas} \label{cha:tecnologias-envolvidas}
 
-TODO
+Podemos dividir as tecnologias utilizadas na plataforma Starbus em três grupos de ferramentas, ferramentas de desenvolvimento, 
+as de auxílio ao desenvolvimento e ferramentas de suporte. O primeiro grupo foram selecionadas para prover uma solução para o 
+problema inicial, o segundo auxiliou a utilização das ferramentas do primeiro grupo para solucionar o problema e atingir o 
+objetivo do trabalho, por fim o último grupo que permitiu colocar a solução em produção para colhermos os resultados do trabalho. 
+
+Desenvolve-se software utilizando uma linguagem de programação, que deve obedecer alguns critérios relativos ao problema a ser solucionado. 
+No caso deste trabalho os critérios foram: uma linguagem de curta curva de aprendizagem, dispondo de um conjunto de ferramentas maduras e 
+com abordagem pragmática para desenvolvimento. A linguagem Ruby em sua versão 2.2, apresentou excelente desempenho nesses critérios, 
+principalmente no que diz respeito a seu ferramental que tem influenciado toda a comunidade de desenvolvimento de software com sua praticidade 
+suas boas práticas. Um exemplo disso, é o framework Grape que disponibiliza uma série de soluções específicas para o desenvolvimento de 
+RESTs APIS, que chama a atenção por sua praticidade e simplicidade. As ferramentas citadas acima juntamente com o banco de dados Postgres na 
+versão 10 fazem parte do grupo de ferramentas de desenvolvimento utilizadas para implementar a plataforma Starbus.
+
+O desenvolvimento utilizando as ferramentas acima pode ser agilizado utilizando um segundo grupo de ferramentas que auxiliam no desenvolvimento 
+e na entrega com qualidade. Esse segundo grupo é composto por ferramentas de auxilio de desenvolvimento, que podemos destacar das utilizadas no 
+desenvolvimento desse projeto o editor de texto Vim que possui uma série de funcionalidades para manipulação de código bem como o suporte a 
+linguagem Ruby por meio highlight e autocomplete. Outra funcionalidade interessante desse editor é o fato de roda direto na linha de comando, 
+o que permite alternar entre a edição de código e a execução de tasks em terminal, tão frequentes no desenvolvimento utilizando Ruby. 
+A biblioteca Rspec foi fundamental para a escrita de testes automatizados, pela sua facilidade, maturidade e principalmente expressividade. 
+Outras ferramentas utilizadas para suporte ao desenvolvimento foi o Git que permite o versionamento de código, que juntamente com o site Github, 
+permitiu armazenar de forma segura e compartilhada o código da aplicação durante e pós desenvolvimento. Para acesso e manipulação de dados no Postgres 
+foi utilizada a IDE DBeaver na versão 5.2 que prover uma interface amigável e completa para validação de estrutura de banco de dados bem execução de querys SQL. 
+
+Por fim, para executar a plataforma Starbus em ambiente produtivo e assim atingir os objetivos específicos do trabalho, procurou-se uma ferramenta que 
+pudesse trazer a menor carga de trabalho relacionada a infra estrutura de aplicação, visto que o foco do trabalho deveria ser no desenvolvimento da solução. 
+Assim sendo a plataforma Heroku, foi a solução mais viável visto que oferece um ambiente extremamente flexível e escalável com apenas poucas linha de configuração. 
+Por exemplo, para se colocar no ar uma nova versão da aplicação basta realizar um git push para um determinado repositório da ferramenta.
