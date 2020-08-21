@@ -3,37 +3,27 @@
 % ----------------------------------------------------------
 \chapter{Tecnologias Envolvidas} \label{cha:tecnologias-envolvidas}
 
-Pode-se dividir as tecnologias utilizadas na construação da plataforma Starbus em três grupos de ferramentas: 
-auxilo ao desenvolvimento, desenvolvimento e suporte. O primeiro grupo abrange as ferramentas utilizadas para
-a construação da plataforma em si, o segundo auxiliou a utilização das ferramentas do primeiro grupo, por fim 
-o último grupo que permitiu colocar a solução em produção para colhermos os resultados do trabalho. 
+As tecnologias utilizadas na construação da plataforma Starbus são divididos em três grupos de ferramentas. 
+Abaixo é específicado cada grupo, bem como as ferramentas pertencentes a cada um deles. 
 
-Software é desenvolvido utilizando uma linguagem de programação, que deve obedecer alguns critérios relativos 
-ao problema a ser solucionado. No caso deste trabalho os critérios foram: uma linguagem de curta curva de 
-aprendizagem, dispondo de um conjunto de ferramentas maduras e com abordagem pragmática para desenvolvimento. 
-A linguagem Ruby em sua versão 2.2, apresentou excelente desempenho nesses critérios, principalmente no que 
-diz respeito a seu ferramental que tem influenciado toda a comunidade de desenvolvimento de software com sua 
-praticidade e boas práticas. Um exemplo disso, é o framework Grape que disponibiliza uma série de soluções 
-específicas para o desenvolvimento de RESTs APIS, que chama a atenção por sua praticidade e simplicidade. 
-As ferramentas citadas acima juntamente com o banco de dados Postgres na versão 10 fazem parte do grupo de 
-ferramentas de desenvolvimento utilizadas para implementar a plataforma Starbus.
+O primeiro grupo abrange as ferramentas utilizadas para a construação da plataforma em si, sendo a linguagem
+de programação, o framework e banco de dados utilizado na aplicação. A liguagem Ruby na versao 2.2 é uma linguagem 
+de curta curva de aprendizagem, dispondo de um conjunto de ferramentas maduras e com abordagem pragmática para 
+desenvolvimento. Faz parte de seu ferramental o framework Grape, que tem se mostrado uma solução prática para 
+a construção de uma API REST, focando em oferecer uma interface simples para manipulação de dados oriundos de 
+requições web. Por isso, Grape foi utilizado na concepção da API REST da plataforma. O dados são armazenados em 
+bando de dados Postgres, na versão 12.1, que é de fácil configuração e possui uma comunidade ativa. 
 
-O desenvolvimento utilizando as tecnologias acima pode ser agilizado utilizando um segundo grupo de ferramentas 
-que auxiliam no desenvolvimento e na entrega com qualidade. Esse segundo grupo é composto por ferramentas de 
-auxilio de desenvolvimento, que podemos destacar das utilizadas no desenvolvimento desse projeto o editor de 
-texto Vim que possui uma série de funcionalidades para manipulação de código bem como o suporte a linguagem Ruby 
-por meio highlight e autocomplete. Outra funcionalidade interessante desse editor é o fato de roda direto na 
-linha de comando, o que permite alternar entre a edição de código e a execução de tasks em terminal, tão 
-frequentes no desenvolvimento utilizando Ruby. A biblioteca Rspec foi fundamental para a escrita de testes 
-automatizados, pela sua facilidade, maturidade e principalmente expressividade. Outras ferramentas utilizadas para 
-suporte ao desenvolvimento foi o Git que permite o versionamento de código, que juntamente com o site Github, 
-permitiu armazenar de forma segura e compartilhada o código da aplicação durante e pós desenvolvimento. Para 
-acesso e manipulação de dados no Postgres foi utilizada a IDE DBeaver na versão 5.2 que prover uma interface 
-amigável e completa para validação de estrutura de banco de dados bem execução de querys SQL. 
+O segundo grupo é composto por ferramentas de suporte ao desenvolvimento. A primeira escolha foi o editor Vim que 
+possui uma excelente suporte ao Ruby, além de permitir uma fácil alternacia entre o terminal e o editor, tornando 
+pratica a execução de tarefas no terminal, que é tão comum no desenvolvimento Ruby. Para escrita dos testes da 
+aplicação foi escolida a biblioteca Rspec na versao 3.9, que tem influenciado toda a comunidade de desenvolvimento
+de software com sua expressividade e clareza. Para acesso, debug e manipulação de dados no Postgres, foi utilizada 
+a IDE DBeaver, na versao 7.0, um software open source com funcionalidades excelentes.     
 
 Por fim, para executar a plataforma Starbus em ambiente produtivo e assim atingir os objetivos específicos do 
 trabalho, procurou-se uma ferramenta que pudesse trazer a menor carga de trabalho relacionada a infra estrutura 
-de aplicação, visto que o foco do trabalho deveria ser no desenvolvimento da solução. 
-Assim sendo, a plataforma Heroku foi a solução mais viável, visto que oferece um ambiente extremamente flexível 
-e escalável com apenas poucas linha de configuração. Por exemplo, para se colocar no ar uma nova versão da 
-aplicação basta realizar um git push para um determinado repositório da ferramenta.
+de aplicação, visto que o foco do trabalho deveria ser no desenvolvimento da solução. Assim sendo, a plataforma 
+Heroku foi a solução mais viável, visto que oferece um ambiente extremamente flexível e escalável com apenas poucas 
+linha de configuração. Por exemplo, para se colocar no ar uma nova versão da aplicação basta realizar um git push para 
+um determinado repositório da ferramenta.
